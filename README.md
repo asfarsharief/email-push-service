@@ -1,4 +1,4 @@
-# mai-labs-url-shortner
+# email-push-service
 A Golang library to listen and publish emails
 
 ## Usage
