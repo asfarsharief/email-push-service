@@ -53,8 +53,7 @@ func HandleCallback(w http.ResponseWriter, r *http.Request) {
 	saveToken(token)
 
 	// Display token info
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(token)
+	fmt.Fprintf(w, "Welcome! <a href='/oauth2callback'>Token download is successful</a>")
 }
 
 // Save token to file (you can use a database instead)

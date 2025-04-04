@@ -53,7 +53,6 @@ func (gs *GmailSender) FetchAccessToken() string {
 
 func (gs *GmailSender) SendMail(fromAddress, toAddress, subject, body string) error {
 	accessToken := gs.FetchAccessToken()
-	fmt.Println("Access: ", accessToken)
 	if accessToken == "" {
 		logger.Info("Token file missing, call localhost:8080/login?provider=gmail to download file")
 		return errors.New("Token file missing")
