@@ -17,4 +17,5 @@ make build
 
 ### Development Testing
 - `make run` run the server locally. A publisher script is also attacked to trigger a sample event. 
-- To begin testing, first you need to login with provider by hitting localhost:8080/login?provider={provider}
+- To begin testing, first you need to login with provider by hitting `localhost:8080/login?provider={provider}`
+- To run the sample queue (Nats) locally, just run `docker run --name nats -p 4222:4222 -d nats:latest`
